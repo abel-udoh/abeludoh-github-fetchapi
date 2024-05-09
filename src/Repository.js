@@ -23,6 +23,16 @@ const Repository = () => {
       <h2>{repo.name}</h2>
       <p>{repo.description}</p>
       <p>Language: {repo.language}</p>
+      <p>Full Name: {repo.full_name}</p>
+      <p>Owner: {repo.owner.login}</p>
+      <p>Owner Avatar: <img src={repo.owner.avatar_url} alt={repo.owner.login} /></p>
+      <p>URL: <a href={repo.html_url}>{repo.html_url}</a></p>
+      <p>Stars: {repo.stargazers_count}</p>
+      <p>Forks: {repo.forks_count}</p>
+      <p>License: {repo.license ? repo.license.name : 'None'}</p>
+      <p>Created At: {new Date(repo.created_at).toLocaleString()}</p>
+      <p>Last Updated At: {new Date(repo.updated_at).toLocaleString()}</p>
+      <p>Size: {repo.size} KB</p>
     </div>
   );
 };
