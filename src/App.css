@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
+  min-height: 100vh;
 }
 
 .container {
@@ -103,7 +104,6 @@ footer {
   text-align: center;
   padding: 10px 0;
   background-color: #031846;
-  margin-top: 20px;
   color: white;
   margin-top: 15%;
 }
