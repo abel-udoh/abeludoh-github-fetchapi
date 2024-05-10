@@ -1,39 +1,11 @@
-/*import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-*/
-
-
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import RepositoriesList from './RepositoriesList';
 import Repository from './Repository';
 import ErrorBoundary from './ErrorBoundary';
+import './App.css';
 
-// eslint-disable-next-line
 const NotFound = () => {
   let location = useLocation();
 
@@ -47,15 +19,29 @@ const NotFound = () => {
 const App = () => {
   return (
     <Router>
-      <ErrorBoundary>
-        <Routes>
-          <Route path="/" element={<RepositoriesList />} />
-          <Route path="/:repoName" element={<Repository />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </ErrorBoundary>
+      <header>
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="#">RepositoriesList</Link></li>
+          </ul>
+        </nav>
+      </header>
+      <main className="container">
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<RepositoriesList />} />
+            <Route path="/:repoName" element={<Repository />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ErrorBoundary>
+      </main>
+      <footer>
+        <p>&copy; 2024 Cyber Premium. All Rights Reserved.</p>
+      </footer>
     </Router>
   );
 };
 
 export default App;
+
