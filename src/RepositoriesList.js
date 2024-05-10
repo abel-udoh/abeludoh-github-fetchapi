@@ -29,7 +29,7 @@ const RepositoriesList = () => {
   return (
     <div>
       {repos.map(repo => (
-        <div key={repo.id}>
+        <div className='cta-button' key={repo.id}>
           {/* Link to the individual repository */}
           <Link to={`/${repo.name}`}>{repo.name}</Link>
         </div>

@@ -25,6 +25,12 @@ const App = () => {
             <li><Link to="https://github.com/abel-udoh">GitHub</Link></li>
           </ul>
         </nav>
+        <div className="hero">
+          <h2>Welcome to Abel Udoh GitHub Fetch API</h2>
+          <p>A web application that allows users to explore GitHub repositories.</p>
+        </div>
+
+
       <main className="container">
         <ErrorBoundary>
           <Routes>

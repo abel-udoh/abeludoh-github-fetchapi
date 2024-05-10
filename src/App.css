@@ -66,38 +66,54 @@ button:hover {
   background-color: #0056b3;
   color: goldenrod;
 }
-hero {
-  background-color: #007bff;
+.hero {
+  background-image: url('../public/heroBG.png');
+  background-size: cover;
+  background-position: center;
   color: #fff;
-  padding: 50px;
-  text-align: center;
+  padding: 60px;
+  text-align: left;
   margin-bottom: 20px;
+  height: 400px;
 }
 
-hero h2 {
+.hero h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  padding-top: 10%;
 }
 
 .cta-button {
-  display: inline-block;
+
   padding: 10px 20px;
-  background-color: #0056b3;
-  color: #fff;
+  background-color: #61affd;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
+  border: none;
   transition: background-color 0.3s;
+  margin-bottom: 10px;
+  width: 30%;
 }
 
 .cta-button:hover {
-  background-color: #004292;
+  background-color: #eda6f7;
 }
 
 .repo-list {
-  background-color: #fff;
+  background-color: #e2cccc;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.no-underline {
+  text-decoration: none;
 }
 
 footer {
