@@ -19,14 +19,12 @@ const NotFound = () => {
 const App = () => {
   return (
     <Router>
-      <header>
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="#">RepositoriesList</Link></li>
+            <li><Link to="https://github.com/abel-udoh">GitHub</Link></li>
           </ul>
         </nav>
-      </header>
       <main className="container">
         <ErrorBoundary>
           <Routes>
@@ -37,7 +35,7 @@ const App = () => {
         </ErrorBoundary>
       </main>
       <footer>
-        <p>&copy; 2024 Cyber Premium. All Rights Reserved.</p>
+        <p>&copy; 2024 <Link to="https://www.linkedin.com/in/abel-udoh-4a7771110">Cyber Premium. </Link>All Rights Reserved.</p>
       </footer>
     </Router>
   );
