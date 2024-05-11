@@ -60,7 +60,8 @@ button{
   font-size: 16px;
   color: #f8f8f8;
   background-color: #004292;
-  margin: 10px;
+  margin: 20px;
+  margin-top: 10px;
 }
 button:hover {
   background-color: #0056b3;
@@ -84,7 +85,6 @@ button:hover {
 }
 
 .cta-button {
-
   padding: 10px 20px;
   background-color: #61affd;
   color: #ffffff;
@@ -93,7 +93,9 @@ button:hover {
   border: none;
   transition: background-color 0.3s;
   margin-bottom: 10px;
-  width: 30%;
+  width: 35%;
+  display: inline-block;
+  margin: 10px;
 }
 
 .cta-button:hover {
@@ -106,6 +108,7 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
+  display: inline-block;
 }
 
 a {
